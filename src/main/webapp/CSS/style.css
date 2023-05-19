@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    max-height: 1080px;
+    max-width: 1920px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,69,78,1) 50%, rgba(0,0,0,1) 100%);
+    position: relative;
+}
+
+.nav{
+    padding: 40px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.link ul{
+    display: flex;
+}
+
+.link ul li{
+    list-style-type: none;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.link ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
