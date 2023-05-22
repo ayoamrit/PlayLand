@@ -24,19 +24,124 @@
             </div>
         </div>
 
-        <div class="items">
-            <img src="IMG/GrandTheftAuto.jpg" width="220px" height="300px">
-            <img src="IMG/AssassinsCreed.jpg" width="220px" height="300px">
-            <img src="IMG/FarCry.jpg" width="220px" height="300px">
-            <img src="IMG/TheWitcher.jpg" width="220px" height="300px">
-        </div>
-        <br>
-        <div class="items">
-            <img src="IMG/Battlefield.jpg" width="220px" height="300px">
-            <img src="IMG/CallOfDuty.jpg" width="220px" height="300px">
-            <img src="IMG/NeedForSpeed.jpg" width="220px" height="300px">
-            <img src="IMG/MudRunner.jpg" width="220px" height="300px">
-        </div>
     </header>
+
+
+    <div class="items">
+
+        <div class="game">
+            <img class="image" src="IMG/GrandTheftAuto.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/AssassinsCreed.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/ResidentEvil.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/FarCryReborn.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/TheWitcher.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="items">
+
+        <div class="game">
+            <img class="image" src="IMG/GodOfWar.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/CallOfDuty.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/NeedForSpeed.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/MudRunner.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <img class="image" src="IMG/Battlefield.jpg">
+            <div class="middle">
+                <button class="button">$4.99</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="column-1">
+            <h3>PlayLand</h3>
+            <p>"Welcome to our online gamestore! We offer a wide selection of games<br> for all interests and playing
+            styles. Our collection includes best-selling action<br> and racing, as well as rare and hard-to-find titles."</p>
+        </div>
+
+        <div class="column-2">
+            <h3>Get to Know Us</h3>
+            <ul>
+                <li>Careers</li>
+                <li>Investor Relations</li>
+                <li>Press Releases</li>
+                <li>Community</li>
+            </ul>
+        </div>
+
+        <div class="column-3">
+            <h3>Rewards</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>Gift Cards</li>
+                <li>Points</li>
+                <li>Refund Policy</li>
+            </ul>
+        </div>
+
+        <div class="column-4">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
