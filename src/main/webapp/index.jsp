@@ -6,8 +6,8 @@
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chakra+Petch:
-    wght@300&family=Old+Standard+TT&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chakra+Petch:wght@300&family=Old+St
+        andard+TT&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
             <div class="link">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="#">Cart</a></li>
                 </ul>
             </div>

@@ -6,8 +6,7 @@
 }
 
 body{
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(57,57,64,1) 50%, rgba(0,0,0,1) 100%);
-    font-family: 'Poppins', sans-serif;
+    background-color: white;
 }
 header{
     max-height: 1080px;
@@ -65,6 +64,7 @@ header{
     height: 300px;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 15px;
 }
 
 
@@ -94,6 +94,7 @@ header{
     font-size: 16px;
     padding: 16px 32px;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 footer{
@@ -126,4 +127,56 @@ footer h3{
     list-style-type: none;
     padding-bottom: 10px;
     cursor: pointer;
+}
+
+/*-----contact page style--------*/
+.form-text{
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.form-text h3{
+    font-size: 3em;
+}
+
+.contact-form form{
+    text-align: center;
+}
+
+.field{
+    width: 400px;
+    height: 40px;
+    margin-top: 30px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.textarea{
+    width: 400px;
+    height: 120px;
+    margin-top: 30px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.submit-button{
+    width: 400px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor:pointer;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:black;
+}
+
+.submit-button:hover{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
 }
