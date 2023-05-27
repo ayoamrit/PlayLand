@@ -17,9 +17,9 @@
             </div>
             <div class="link">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.jsp">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Cart</a></li>
+                    <li><a href="cart.html">Cart</a></li>
                 </ul>
             </div>
         </div>
