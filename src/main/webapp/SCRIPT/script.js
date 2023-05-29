@@ -1,7 +1,7 @@
 //Array of game serial numbers
 const gameList = ["GTA4", "ACV", "REB", "FC3R", "TW3", "GOW", "COD2", "NFSH", "MR", "BF1"]
 
-function addToCart(gameSerialNumber, alertHead, alertBody){
+function addToCart(gameSerialNumber){
 
     //If serial of the selected game is already in the local storage
     if(gameSerialNumber in localStorage){
@@ -115,37 +115,51 @@ function clearCart(){
 }
 
 
-
 function CustomAlert(){
+
+    //Function to display the custom alert dialog
     this.alert = function(message,title){
+
+        //Append HTML elements for the dialog overlay and dialog box to the document body
         document.body.innerHTML = document.body.innerHTML + '<div id="dialogoverlay"></div><div id="dialogbox" class="slit-in-vertical"><div><div id="dialogboxhead"></div><div id="dialogboxbody"></div><div id="dialogboxfoot"></div></div></div>';
 
+        //Get reference to the dialog overlay and dialog box elements
         let dialogoverlay = document.getElementById('dialogoverlay');
         let dialogbox = document.getElementById('dialogbox');
 
+        //Set the height of the dialog overlay to match the window height
         let winH = window.innerHeight;
         dialogoverlay.style.height = winH+"px";
 
+        //Position on the dialog box 100 pixels from the top
         dialogbox.style.top = "100px";
 
+        //Display the dialog overlay and dialog box
         dialogoverlay.style.display = "block";
         dialogbox.style.display = "block";
 
+        //Show or hide the dialog box title based on whether it's provided
         document.getElementById('dialogboxhead').style.display = 'block';
 
         if(typeof title === 'undefined') {
             document.getElementById('dialogboxhead').style.display = 'none';
         } else {
-            document.getElementById('dialogboxhead').innerHTML = '<i class="fa fa-exclamation-circle" aria-hidden="true"></i> '+ title;
+            document.getElementById('dialogboxhead').innerHTML =
+                '<i class="fa fa-exclamation-circle" aria-hidden="true"></i> '+ title;
         }
+
+        //Set the message and Ok button of the dialog box
         document.getElementById('dialogboxbody').innerHTML = message;
-        document.getElementById('dialogboxfoot').innerHTML = '<button class="pure-material-button-contained active" onclick="customAlert.ok()">OK</button>';
+        document.getElementById('dialogboxfoot').innerHTML =
+            '<button class="pure-material-button-contained active" onclick="customAlert.ok()">OK</button>';
     }
 
+    //Function to handle the Ok button click event
     this.ok = function(){
         document.getElementById('dialogbox').style.display = "none";
         document.getElementById('dialogoverlay').style.display = "none";
     }
 }
 
+//Create an instance of the customAlert class
 let customAlert = new CustomAlert();
