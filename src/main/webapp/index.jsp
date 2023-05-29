@@ -34,35 +34,35 @@
         <div class="game">
             <img class="image" src="IMG/GrandTheftAuto.jpg">
             <div class="middle">
-                <button onclick="addToCart('GTA4')" class="button">$4.99</button>
+                <button onclick="addToCart('GTA4')" class="button">$49.99</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/AssassinsCreed.jpg">
             <div class="middle">
-                <button onclick="addToCart('ACV')" class="button">$4.99</button>
+                <button onclick="addToCart('ACV')" class="button">$56.65</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/ResidentEvil.jpg">
             <div class="middle">
-                <button onclick="addToCart('REB')" class="button">$4.99</button>
+                <button onclick="addToCart('REB')" class="button">$19.99</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/FarCryReborn.jpg">
             <div class="middle">
-                <button onclick="addToCart('FC3R')" class="button">$4.99</button>
+                <button onclick="addToCart('FC3R')" class="button">$39.99</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/TheWitcher.jpg">
             <div class="middle">
-                <button onclick="addToCart('TW3')" class="button">$4.99</button>
+                <button onclick="addToCart('TW3')" class="button">$89.88</button>
             </div>
         </div>
 
@@ -75,35 +75,35 @@
         <div class="game">
             <img class="image" src="IMG/GodOfWar.jpg">
             <div class="middle">
-                <button onclick="addToCart('GOW')" class="button">$4.99</button>
+                <button onclick="addToCart('GOW')" class="button">$9.99</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/CallOfDuty.jpg">
             <div class="middle">
-                <button onclick="addToCart('COD2')" class="button">$4.99</button>
+                <button onclick="addToCart('COD2')" class="button">$69.99</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/NeedForSpeed.jpg">
             <div class="middle">
-                <button onclick="addToCart('NFSH')" class="button">$4.99</button>
+                <button onclick="addToCart('NFSH')" class="button">$79.59</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/MudRunner.jpg">
             <div class="middle">
-                <button onclick="addToCart('MR')" class="button">$4.99</button>
+                <button onclick="addToCart('MR')" class="button">$16.99</button>
             </div>
         </div>
 
         <div class="game">
             <img class="image" src="IMG/Battlefield.jpg">
             <div class="middle">
-                <button onclick="addToCart('BF1')" class="button">$4.99</button>
+                <button onclick="addToCart('BF1')" class="button">$119.09</button>
             </div>
         </div>
     </div>
