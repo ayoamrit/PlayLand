@@ -243,11 +243,13 @@ footer h3{
 .buy-button:hover{
     border: 1px solid green;
     background-color: green;
+    cursor: pointer;
 }
 
 .clear-button:hover{
     border: 1px solid red;
     background-color: red;
+    cursor: pointer;
 }
 
 .purchase form h4{
