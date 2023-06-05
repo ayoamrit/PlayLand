@@ -2,21 +2,21 @@ package com.playland.contact;
 
 public class FormParameters {
 
-    private String firstname;
-    private String lastname;
-    private String email;
-    private String message;
+    private static String firstname;
+    private static String lastname;
+    private static String email;
+    private static String message;
 
 
     /**
-     * Constructs a new instance of FormParameters with the provided values.
+     * Constructs an instance of setFormParameters with the provided values.
      *
      * @param firstname The firstname entered in the form
      * @param lastname The lastname entered in the form
      * @param email The email entered in the form
      * @param message The message entered in the form
      */
-    public FormParameters(String firstname, String lastname, String email, String message){
+    public void setFormParameters(String firstname, String lastname, String email, String message){
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;

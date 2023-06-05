@@ -1,8 +1,12 @@
 package com.playland.contact;
 
 import java.io.*;
+import java.sql.SQLException;
+
+import com.playland.database.SqlDataHandler;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
+import org.jetbrains.annotations.NotNull;
 
 @WebServlet(name = "contactServlet", value = "/contact-servlet")
 public class ContactServlet extends HttpServlet{
@@ -16,7 +20,7 @@ public class ContactServlet extends HttpServlet{
      * @param response The HTTPServletResponse object for sending the response.
      * @throws IOException If an I/P error occurs while processing the request.
      */
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doPost(@NotNull HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         //Retrieving parameters from the request object
         String firstname = request.getParameter("firstname");
@@ -25,8 +29,28 @@ public class ContactServlet extends HttpServlet{
         String message = request.getParameter("message");
 
         //Creating a new instance of FormParameters with the retrieved values
-        formParameters = new FormParameters(firstname, lastname, email, message);
+        formParameters = new FormParameters();
+        formParameters.setFormParameters(firstname, lastname, email, message);
 
+        PrintWriter out = response.getWriter();
+
+        try{
+            SqlDataHandler sqlDataHandler = new SqlDataHandler();
+
+            sqlDataHandler.sendContactData();
+
+            generateAlert(out, "Request Success: The request has been submitted.");
+        }catch(SQLException e){
+            generateAlert(out, "Request Error: Unable to connect to the server.");
+        }
+
+    }
+
+    private void generateAlert(PrintWriter out, String message){
+        out.println("<script type=\"text/javascript\">");
+        out.println("alert('"+message+"');");
+        out.println("location='contact.html';");
+        out.println("</script>");
     }
 
 }
