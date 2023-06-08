@@ -3,7 +3,7 @@ package com.playland.contact;
 import java.io.*;
 import java.sql.SQLException;
 
-import com.playland.database.SqlDataHandler;
+import com.playland.database.ContactDataHandler;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import org.jetbrains.annotations.NotNull;
@@ -35,7 +35,7 @@ public class ContactServlet extends HttpServlet{
         PrintWriter out = response.getWriter();
 
         try{
-            SqlDataHandler sqlDataHandler = new SqlDataHandler();
+            ContactDataHandler sqlDataHandler = new ContactDataHandler();
 
             //Send contact data to the Sql database
             sqlDataHandler.sendContactData();

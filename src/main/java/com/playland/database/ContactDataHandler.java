@@ -6,7 +6,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.sql.SQLException;
 
-public class SqlDataHandler extends SqlConnector{
+public class ContactDataHandler extends SqlConnector{
 
     FormParameters formParameters = null;
     public void sendContactData() throws SQLException {
