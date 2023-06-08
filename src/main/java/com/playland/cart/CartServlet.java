@@ -21,8 +21,10 @@ public class CartServlet extends HttpServlet {
         String firstname = request.getParameter("firstname");
         String lastname = request.getParameter("lastname");
         String email = request.getParameter("email");
-        double total = Double.parseDouble(request.getParameter("cart-total"));
-        int quantity = Integer.parseInt(request.getParameter("cart-quantity"));
+        //double total = Double.parseDouble(request.getParameter("cart-total"));
+        double total = 12.12;
+        //int quantity = Integer.parseInt(request.getParameter("cart-quantity"));
+        int quantity = 2;
 
         cartParameters = new CartParameters();
         cartParameters.setCartParameters(firstname, lastname, email, total, quantity);
