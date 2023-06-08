@@ -17,10 +17,10 @@ public class FormParameters {
      * @param message The message entered in the form
      */
     public void setFormParameters(String firstname, String lastname, String email, String message){
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.message = message;
+        FormParameters.firstname = firstname;
+        FormParameters.lastname = lastname;
+        FormParameters.email = email;
+        FormParameters.message = message;
     }
 
     /**

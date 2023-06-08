@@ -95,6 +95,12 @@ function loadShoppingCart(){
     //Retrieve the element with the ID "total" and update its content with the
     //formatted value of "total"
     document.getElementById("purchase-total").innerHTML = total.toFixed(2);
+
+    //Calling function to set total quantity of the games purchased
+    setQuantity();
+
+    //Calling function to set net total amount
+    setTotal();
 }
 
 function clearCart(){
@@ -112,6 +118,25 @@ function clearCart(){
         //Delete the first row (index 1) from the table
         document.getElementById("table").deleteRow(1);
     }
+
+    //Calling method to clear the total quantity
+    clearQuantity();
+    //Calling method to clear the net total amount
+    clearTotal();
+}
+
+function setQuantity(){
+    document.getElementById("cart-quantity").value = localStorage.length;
+}
+function setTotal(total){
+    document.getElementById("cart-total").value = total;
+}
+
+function clearTotal(){
+    document.getElementById("cart-total").value = "";
+}
+function clearQuantity(){
+    document.getElementById("cart-quantity").value = "";
 }
 
 

@@ -37,16 +37,19 @@ public class ContactServlet extends HttpServlet{
         try{
             SqlDataHandler sqlDataHandler = new SqlDataHandler();
 
+            //Send contact data to the Sql database
             sqlDataHandler.sendContactData();
 
+            //Generate an alert for successful request submission
             generateAlert(out, "Request Success: The request has been submitted.");
         }catch(SQLException e){
+            //Generate an alert for database connection error
             generateAlert(out, "Request Error: Unable to connect to the server.");
         }
-
     }
 
-    private void generateAlert(PrintWriter out, String message){
+    //Generates an alert using JavaScript to display a message and redirect to 'contact.html'
+    private void generateAlert(@NotNull PrintWriter out, String message){
         out.println("<script type=\"text/javascript\">");
         out.println("alert('"+message+"');");
         out.println("location='contact.html';");
