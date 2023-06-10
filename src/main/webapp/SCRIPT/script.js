@@ -60,7 +60,7 @@ function loadShoppingCart(){
     var table = document.getElementById("table");
 
     //Variable to keep track of the total cost
-    var total = 0;
+    let total = 0;
 
     //Counter for row index
     let rowCount = 1;
@@ -99,8 +99,8 @@ function loadShoppingCart(){
     //Calling function to set total quantity of the games purchased
     setQuantity();
 
-    //Calling function to set net total amount
-    setTotal();
+    //Assigning total purchase value
+    document.getElementById("cart-total").value = total.toFixed(2);
 }
 
 function clearCart(){
@@ -127,9 +127,6 @@ function clearCart(){
 
 function setQuantity(){
     document.getElementById("cart-quantity").value = localStorage.length;
-}
-function setTotal(total){
-    document.getElementById("cart-total").value = total;
 }
 
 function clearTotal(){

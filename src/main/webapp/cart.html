@@ -39,11 +39,11 @@
         <h3>Purchase</h3>
 
         <form action="cart-servlet" method="post">
-          <input type="text" name='firstname' required class="field" placeholder="Firstname">
+          <input type="text" id="first-name" name='firstname' required class="field" placeholder="Firstname">
           <br>
-          <input type="text" name='lastname' required class="field" placeholder="Lastname">
+          <input type="text" id="last-name" name='lastname' required class="field" placeholder="Lastname">
           <br>
-          <input type="email" name='email' required class="field" placeholder="Email">
+          <input type="email" id="e-mail" name='email' required class="field" placeholder="Email">
           <h4>Total: <span id="purchase-total"></span></h4>
           <input type="hidden" name='cart-total' id="cart-total">
           <input type="hidden" id='cart-quantity' name="cart-quantity">
