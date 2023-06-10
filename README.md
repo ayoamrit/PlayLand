@@ -34,4 +34,7 @@ To get started with this project, follow these steps:
 
 Feel Free to explore the different pages, add games to the shopping cart, contact the company, and complete purchases.
  
+ ## License
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) </br>
+ This project is licensed under the [MIT License](https://github.com/ayoamrit/PlayLand/blob/main/LICENSE).
 
