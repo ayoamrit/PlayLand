@@ -2,6 +2,8 @@ package com.playland.cart;
 
 
 import com.playland.database.CartDataHandler;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -47,19 +49,22 @@ public class CartServlet extends HttpServlet {
             CartDataHandler cartDataHandler = new CartDataHandler();
             cartDataHandler.sendCartData();
 
-            //Generate an alert for successful request submission
-            generateAlert(out, "You're all set: Your purchase was successful.");
+            response.setContentType("text/html");
+            PrintWriter pw=response.getWriter();
+            pw.println("<script type=\"text/javascript\">");
+            pw.println("alert('Your purchase was successful');");
+            pw.println("</script>");
+            RequestDispatcher rd=request.getRequestDispatcher("index.jsp");
+            rd.include(request, response);
+
         }catch(SQLException e){
             //Generate an alert for database connection error
-            generateAlert(out, "Error: Your purchase could not be completed.");
-        }
-    }
+            out.println("<script type=\"text/javascript\">");
+            out.println("alert('Error: Your purchase could not be completed.');");
+            out.println("</script>");
 
-    //Generates an alert using JavaScript to display a message and redirect to 'contact.html'
-    private void generateAlert(@NotNull PrintWriter out, String message){
-        out.println("<script type=\"text/javascript\">");
-        out.println("alert('"+message+"');");
-        out.println("location='cart.html';");
-        out.println("</script>");
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
