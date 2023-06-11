@@ -34,6 +34,15 @@ To get started with this project, follow these steps:
 
 Feel Free to explore the different pages, add games to the shopping cart, contact the company, and complete purchases.
  
+ ## Usuage
+A visual guide is provided to help you get started with using this project effectively. I have prepared a concise video demonstration that showcases the key features and functionality of this project
+### Video Demonstration
+To make it easier for you to understand how the project works, I have created a YouTube video that provides a steo-by-step walkthrough. You can acces the video by clicking on the image below:
+
+<a href="https://youtu.be/gkEnEX4bapI" target="_blank">
+ <img src="https://github.com/ayoamrit/PlayLand/assets/90580293/44479d47-ce26-4b54-87c7-f5f485ab66da" alt="PlayLand: Watch the video" height="500px" border="10"/></a>
+ 
+ 
  ## License
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) </br>
  This project is licensed under the [MIT License](https://github.com/ayoamrit/PlayLand/blob/main/LICENSE).
