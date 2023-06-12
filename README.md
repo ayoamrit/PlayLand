@@ -39,9 +39,7 @@ A visual guide is provided to help you get started with using this project effec
 ### Video Demonstration
 To make it easier for you to understand how the project works, I have created a YouTube video that provides a steo-by-step walkthrough. You can acces the video by clicking on the image below:
 
-```
  Click [here](https://youtu.be/gkEnEX4bapI) to watch the video demonstration.
-```
  ## License
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) </br>
  This project is licensed under the [MIT License](https://github.com/ayoamrit/PlayLand/blob/main/LICENSE).
