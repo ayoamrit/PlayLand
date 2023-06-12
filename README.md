@@ -40,6 +40,12 @@ A visual guide is provided to help you get started with using this project effec
 To make it easier for you to understand how the project works, I have created a YouTube video that provides a steo-by-step walkthrough. I highly recommend watching the video to maximize your experience with this project. You can acces the video by clicking on the image below:
 
  Click [here](https://youtu.be/gkEnEX4bapI) to watch the video demonstration.
+ 
+ ### Database
+The image illustrates the process of how data is stored in the database within this project. It showcases a simplified representation of a database structure and the flow of information.
+ 
+ ![Database](https://github.com/ayoamrit/PlayLand/assets/90580293/d4ba78db-73fb-4990-abb1-569d56d1dc6e)
+
  ## License
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) </br>
  This project is licensed under the [MIT License](https://github.com/ayoamrit/PlayLand/blob/main/LICENSE).
